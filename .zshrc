@@ -107,6 +107,7 @@ export COMPOSER_MEMORY_LIMIT=-1
 export GPG_TTY=$(tty)
 
 export HOMEBREW_CASK_OPTS="--no-quarantine"
+export HOMEBREW_NO_ENV_HINTS=1
 
 # Preferred editor
 export EDITOR='vim'

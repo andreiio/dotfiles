@@ -26,3 +26,6 @@ alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && k
 
 # Frequent typos
 alias sl="ls"
+
+# Rosetta
+alias x86="arch --x86_64"
