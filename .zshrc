@@ -73,27 +73,27 @@ ZSH_CUSTOM=$DOTFILES/omz
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  aws
-  brew
-  common-aliases
-  composer
-  docker
-  docker-compose
-  docker-machine
-  doctl
-  encode64
-  extract
-  git
-  git-extras
-  gitfast
-  gpg-agent
-  laravel
-  macos
-  npm
-  nvm
-  ripgrep
-  vagrant
-  vscode
+    aws
+    brew
+    common-aliases
+    composer
+    docker
+    docker-compose
+    docker-machine
+    doctl
+    encode64
+    extract
+    git
+    git-extras
+    gitfast
+    gpg-agent
+    laravel
+    macos
+    npm
+    nvm
+    ripgrep
+    vagrant
+    vscode
 )
 
 source $ZSH/oh-my-zsh.sh
