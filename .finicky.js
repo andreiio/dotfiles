@@ -2,9 +2,14 @@
 // Learn more about configuration options: https://github.com/johnste/finicky/wiki/Configuration
 
 module.exports = {
-    defaultBrowser: "Safari",
+    defaultBrowser: 'Safari',
     options: {
-        checkForUpdate: false
+        // Hide the finicky icon from the top bar. Default: false
+        hideIcon: true,
+        // Check for update on startup. Default: true
+        checkForUpdate: false,
+        // Log every request with basic information to console. Default: false
+        logRequests: false,
     },
     rewrite: [
         //
@@ -12,23 +17,23 @@ module.exports = {
     handlers: [
         {
             match: /^https?:\/\/.*\.test$/,
-            browser: "Google Chrome"
+            browser: 'Google Chrome'
         },
         {
             match: /^https?:\/\/meet\.google\.com\/.*$/,
-            browser: "Google Chrome"
+            browser: 'Google Chrome'
         },
         {
             match: [
-                "zoom.us/*",
+                'zoom.us/*',
                 finicky.matchDomains(/.*\zoom.us/),
                 /zoom.us\/j\//,
             ],
-            browser: "us.zoom.xos",
+            browser: 'us.zoom.xos',
         },
         {
-            match: "https://www.figma.com/file/*",
-            browser: "Figma",
+            match: 'https://www.figma.com/file/*',
+            browser: 'Figma',
         }
     ]
 }

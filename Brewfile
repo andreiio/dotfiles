@@ -103,10 +103,12 @@ cask "imageoptim"
 cask "invoker"
 cask "iterm2"
 cask "karabiner-elements"
+cask "keybase"
 cask "logitech-options"
 cask "lunar"
 cask "moonlight"
 cask "ngrok"
+cask "odrive"
 cask "paw"
 cask "phpmon"
 cask "plex"
@@ -155,6 +157,7 @@ mas "Pages", id: 409201541
 mas "Parcel", id: 639968404
 mas "Patterns", id: 429449079
 mas "Pocket", id: 568494494
+mas "Prime Video", id: 545519333
 mas "Super Agent", id: 1568262835
 mas "The Unarchiver", id: 425424353
 mas "Twitter", id: 1482454543
