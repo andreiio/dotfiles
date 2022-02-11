@@ -10,9 +10,10 @@ tap "homebrew/core"
 tap "homebrew/services"
 tap "nicoverbruggen/cask"
 brew "act"
+brew "openssl@1.1"
+brew "ansible"
 brew "libpng", link: false
 brew "webp"
-brew "openssl@1.1"
 brew "asciinema"
 brew "asimov", restart_service: true
 brew "aspell"
@@ -23,7 +24,7 @@ brew "gettext"
 brew "pkg-config"
 brew "gd"
 brew "pcre2"
-brew "php", restart_service: true, link: false
+brew "php"
 brew "composer"
 brew "dark-mode"
 brew "dnsmasq", restart_service: true
@@ -43,6 +44,7 @@ brew "gnu-tar"
 brew "pinentry"
 brew "gnupg"
 brew "go"
+brew "highlight"
 brew "htop"
 brew "httrack"
 brew "hub"
@@ -56,16 +58,18 @@ brew "libxml2"
 brew "mackup"
 brew "mas"
 brew "mysql", restart_service: true
-brew "nginx", restart_service: true
+brew "nginx"
 brew "optipng"
-brew "php@7.4", restart_service: true
-brew "php@8.0", restart_service: true, link: true
+brew "php@7.4"
+brew "php@8.0"
 brew "pinentry-mac"
 brew "pngquant"
+brew "postgresql", restart_service: true
 brew "rclone"
 brew "redis", restart_service: true
 brew "ripgrep"
 brew "rsync"
+brew "ruby"
 brew "s3cmd"
 brew "slowhttptest"
 brew "smartmontools"
@@ -94,6 +98,7 @@ cask "docker"
 cask "dropshare"
 cask "figma"
 cask "finicky"
+cask "firefox"
 cask "flutter"
 cask "font-jetbrains-mono"
 cask "google-chrome"
@@ -106,12 +111,15 @@ cask "karabiner-elements"
 cask "keybase"
 cask "logitech-options"
 cask "lunar"
+cask "mimestream"
 cask "moonlight"
 cask "ngrok"
 cask "odrive"
 cask "paw"
 cask "phpmon"
+cask "phpstorm"
 cask "plex"
+cask "poedit"
 cask "postman"
 cask "qlcolorcode"
 cask "qlimagesize"
@@ -140,6 +148,7 @@ mas "1Blocker", id: 1365531024
 mas "Actions", id: 1586435171
 mas "Affinity Designer", id: 824171161
 mas "Animatrice", id: 1133146803
+mas "Bear", id: 1091189122
 mas "DaisyDisk", id: 411643860
 mas "Dato", id: 1470584107
 mas "GarageBand", id: 682658836
@@ -152,12 +161,12 @@ mas "Microsoft PowerPoint", id: 462062816
 mas "Microsoft Remote Desktop", id: 1295203466
 mas "Microsoft Word", id: 462054704
 mas "Numbers", id: 409203825
-mas "OneDrive", id: 823766827
 mas "Pages", id: 409201541
 mas "Parcel", id: 639968404
 mas "Patterns", id: 429449079
 mas "Pocket", id: 568494494
 mas "Prime Video", id: 545519333
+mas "Steam Link", id: 1246969117
 mas "Super Agent", id: 1568262835
 mas "The Unarchiver", id: 425424353
 mas "Twitter", id: 1482454543
