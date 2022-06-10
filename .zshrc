@@ -87,6 +87,7 @@ plugins=(
     git-extras
     gitfast
     gpg-agent
+    kubectl
     laravel
     macos
     npm
