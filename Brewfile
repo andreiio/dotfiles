@@ -21,9 +21,11 @@ brew "asimov", restart_service: true
 brew "aspell"
 brew "python@3.9"
 brew "awscli"
+brew "azure-cli"
 brew "bash"
 brew "gettext"
 brew "pkg-config"
+brew "cmake"
 brew "commitizen"
 brew "gd"
 brew "pcre2"
@@ -48,6 +50,7 @@ brew "gnu-tar"
 brew "pinentry"
 brew "gnupg"
 brew "go"
+brew "helm"
 brew "highlight"
 brew "htop"
 brew "httrack"
@@ -80,7 +83,6 @@ brew "ruby"
 brew "s3cmd"
 brew "slowhttptest"
 brew "smartmontools"
-brew "svgo"
 brew "terraform"
 brew "tesseract-lang"
 brew "tree"
@@ -193,6 +195,7 @@ mas "Prime Video", id: 545519333
 mas "Steam Link", id: 1246969117
 mas "Super Agent", id: 1568262835
 mas "The Unarchiver", id: 425424353
+mas "Things", id: 904280696
 mas "Trello", id: 1278508951
 mas "Twitter", id: 1482454543
 mas "Xcode", id: 497799835
