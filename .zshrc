@@ -2,7 +2,7 @@
 export DOTFILES=$HOME/.dotfiles
 
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=/usr/local/bin:~/.config/phpmon/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
@@ -97,11 +97,13 @@ plugins=(
     vscode
 )
 
+
+# Plugins config
+zstyle ':omz:plugins:nvm' autoload yes
+
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-
-export NVM_AUTOLOAD=1
 
 export COMPOSER_MEMORY_LIMIT=-1
 
