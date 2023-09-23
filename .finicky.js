@@ -1,6 +1,8 @@
 // Use https://finicky-kickstart.now.sh to generate basic configuration
 // Learn more about configuration options: https://github.com/johnste/finicky/wiki/Configuration
 
+let work = 'Profile 4';
+
 module.exports = {
     defaultBrowser: 'Safari',
     options: {
@@ -21,7 +23,17 @@ module.exports = {
         },
         {
             match: /^https?:\/\/meet\.google\.com\/.*$/,
-            browser: 'Google Chrome'
+            browser: {
+                name: 'Google Chrome',
+                profile: work,
+            },
+        },
+        {
+            match: ({ url }) => url.host.endsWith("amazonaws.com"),
+            browser: {
+                name: 'Google Chrome',
+                profile: work,
+            },
         },
         {
             match: [

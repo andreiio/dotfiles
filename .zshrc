@@ -93,10 +93,10 @@ plugins=(
     npm
     nvm
     ripgrep
+    terraform
     vagrant
     vscode
 )
-
 
 # Plugins config
 zstyle ':omz:plugins:nvm' autoload yes
@@ -111,6 +111,12 @@ export GPG_TTY=$(tty)
 
 export HOMEBREW_CASK_OPTS="--no-quarantine"
 export HOMEBREW_NO_ENV_HINTS=1
+export HOMEBREW_NO_ANALYTICS=1
+
+export SHOW_AWS_PROMPT=true
+export ZSH_THEME_AWS_DIVIDER=" "
+
+export RPROMPT='$(aws_prompt_info) $(tf_prompt_info)'
 
 # Preferred editor
 export EDITOR='vim'

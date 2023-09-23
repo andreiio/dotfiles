@@ -6,15 +6,13 @@ function mkd() {
 }
 
 function pamtid() {
-    if [[ $(grep pam_tid /etc/pam.d/sudo) ]]; then
-        echo "pam_tid already enabled"
-        return
+    if ! grep 'pam_tid.so' /etc/pam.d/sudo --silent; then
+        sudo sed -i -e '1s;^;auth       sufficient     pam_tid.so\n;' /etc/pam.d/sudo
     fi
 
-    sudo sed -i '' '1 a\
-auth       sufficient     pam_tid.so\
-' /etc/pam.d/sudo
-    echo "pam_tid successfully enabled for sudo"
+    if ! grep 'pam_reattach.so' /etc/pam.d/sudo --silent; then
+        sudo sed -i -e '1s;^;auth       optional       /opt/homebrew/lib/pam/pam_reattach.so\n;' /etc/pam.d/sudo
+    fi
 }
 
 function sgip() {
