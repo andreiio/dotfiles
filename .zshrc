@@ -122,3 +122,6 @@ export RPROMPT='$(aws_prompt_info) $(tf_prompt_info)'
 export EDITOR='vim'
 
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+eval "$(atuin init zsh --disable-up-arrow)"
+
