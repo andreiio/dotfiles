@@ -18,8 +18,8 @@ function pamtid() {
 function sgip() {
     groupName="${1:-dev-access-andrei}"
 
-    ipv4=$(curl -4 -s -m 5 icanhazip.com)
-    ipv6=$(curl -6 -s -m 5 icanhazip.com)
+    ipv4=$(curl -4 -s -m 5 https://ipv4.icanhazip.com)
+    ipv6=$(curl -6 -s -m 5 https://ipv6.icanhazip.com)
     ranges=""
 
     if [ -z $AWS_PROFILE ]; then

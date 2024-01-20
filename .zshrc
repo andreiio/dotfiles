@@ -73,6 +73,7 @@ ZSH_CUSTOM=$DOTFILES/omz
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
+    aliases
     aws
     brew
     common-aliases
@@ -94,7 +95,6 @@ plugins=(
     nvm
     ripgrep
     terraform
-    vagrant
     vscode
 )
 
@@ -112,6 +112,7 @@ export GPG_TTY=$(tty)
 export HOMEBREW_CASK_OPTS="--no-quarantine"
 export HOMEBREW_NO_ENV_HINTS=1
 export HOMEBREW_NO_ANALYTICS=1
+export HOMEBREW_NO_INSTALL_UPGRADE=1
 
 export SHOW_AWS_PROMPT=true
 export ZSH_THEME_AWS_DIVIDER=" "
@@ -125,3 +126,4 @@ source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 eval "$(atuin init zsh --disable-up-arrow)"
 
+export SSH_AUTH_SOCK=~/.1password/agent.sock
