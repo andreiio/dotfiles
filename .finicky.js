@@ -4,11 +4,13 @@
 let defaultBrowser = {
     name: 'com.google.Chrome',
     profile: 'Default',
+    openInBackground: false,
 }
 
 let workBrowser = {
     name: 'com.google.Chrome',
     profile: 'Profile 4',
+    openInBackground: false,
 }
 
 module.exports = {
@@ -32,7 +34,7 @@ module.exports = {
             browser: workBrowser,
         },
         {
-            match: /^https?:\/\/meet\.google\.com\/.*$/,
+            match: /^https?:\/\/(docs|drive|meet)\.google\.com\/.*$/,
             browser: workBrowser,
         },
         {
@@ -43,7 +45,6 @@ module.exports = {
             match: [
                 'zoom.us/*',
                 finicky.matchDomains(/.*\zoom.us/),
-                /zoom.us\/j\//,
             ],
             browser: 'us.zoom.xos',
         },

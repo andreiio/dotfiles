@@ -127,3 +127,8 @@ source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 eval "$(atuin init zsh --disable-up-arrow)"
 
 export SSH_AUTH_SOCK=~/.1password/agent.sock
+
+# pnpm
+export PNPM_HOME="/Users/andrei/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+# pnpm end
