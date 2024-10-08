@@ -15,6 +15,7 @@ tap "planetscale/tap"
 tap "shivammathur/extensions"
 tap "shivammathur/php"
 tap "snyk/tap"
+tap "th-ch/youtube-music"
 brew "act"
 brew "ca-certificates"
 brew "ansible"
@@ -29,7 +30,7 @@ brew "jpeg-xl"
 brew "aom"
 brew "argon2"
 brew "asciinema"
-brew "asimov"
+brew "asimov", restart_service: true
 brew "aspell"
 brew "atuin"
 brew "autoconf"
@@ -37,9 +38,7 @@ brew "awscli"
 brew "azure-cli"
 brew "b2-tools"
 brew "bash"
-brew "icu4c"
 brew "boost"
-brew "gmp"
 brew "btop"
 brew "freetype"
 brew "fontconfig"
@@ -54,6 +53,8 @@ brew "commitizen"
 brew "curl"
 brew "freetds"
 brew "gd"
+brew "gmp"
+brew "icu4c"
 brew "libpq"
 brew "php", restart_service: true, link: false
 brew "composer"
@@ -91,7 +92,6 @@ brew "helm"
 brew "highlight"
 brew "htop"
 brew "httrack"
-brew "python@3.9"
 brew "imagemagick"
 brew "infracost"
 brew "ipcalc"
@@ -112,7 +112,7 @@ brew "make"
 brew "mas"
 brew "minio", restart_service: true
 brew "mmv"
-brew "mysql", restart_service: true
+brew "mysql@8.4", restart_service: true, link: true
 brew "nginx"
 brew "nmap"
 brew "oha"
@@ -126,6 +126,7 @@ brew "pinentry-mac"
 brew "pngquant"
 brew "postgresql@14", restart_service: true
 brew "pv"
+brew "python@3.9"
 brew "qemu"
 brew "qrencode"
 brew "qt"
@@ -152,35 +153,27 @@ brew "zsh-syntax-highlighting"
 brew "hashicorp/tap/terraform"
 brew "planetscale/tap/pscale"
 brew "shivammathur/extensions/igbinary@7.4"
-brew "shivammathur/extensions/igbinary@8.1"
 brew "shivammathur/extensions/igbinary@8.2"
 brew "shivammathur/extensions/igbinary@8.3"
 brew "shivammathur/extensions/imagick@7.4"
-brew "shivammathur/extensions/imagick@8.1"
 brew "shivammathur/extensions/imagick@8.2"
 brew "shivammathur/extensions/imagick@8.3"
 brew "shivammathur/extensions/msgpack@7.4"
-brew "shivammathur/extensions/msgpack@8.1"
 brew "shivammathur/extensions/msgpack@8.2"
 brew "shivammathur/extensions/msgpack@8.3"
 brew "shivammathur/extensions/pcov@7.4"
-brew "shivammathur/extensions/pcov@8.1"
 brew "shivammathur/extensions/pcov@8.2"
 brew "shivammathur/extensions/pcov@8.3"
 brew "shivammathur/extensions/redis@7.4"
-brew "shivammathur/extensions/redis@8.1"
 brew "shivammathur/extensions/redis@8.2"
 brew "shivammathur/extensions/redis@8.3"
-brew "shivammathur/extensions/swoole@8.1"
 brew "shivammathur/extensions/swoole@8.2"
 brew "shivammathur/extensions/swoole@8.3"
 brew "shivammathur/extensions/xdebug@7.4"
-brew "shivammathur/extensions/xdebug@8.1"
 brew "shivammathur/extensions/xdebug@8.2"
 brew "shivammathur/extensions/xdebug@8.3"
 brew "shivammathur/php/php", link: false
 brew "shivammathur/php/php@7.4"
-brew "shivammathur/php/php@8.1"
 brew "shivammathur/php/php@8.2", link: true
 brew "snyk/tap/snyk"
 cask "1password"
@@ -189,20 +182,23 @@ cask "adobe-creative-cloud"
 cask "android-studio"
 cask "apparency"
 cask "appcleaner"
+cask "arc"
 cask "azure-data-studio"
 cask "balenaetcher"
 cask "bartender"
 cask "betterzip"
+cask "browserosaurus"
 cask "chromedriver"
+cask "codeql"
 cask "dbeaver-community"
 cask "discord"
 cask "docker"
 cask "drawio"
 cask "dropshare"
 cask "figma"
-cask "finicky"
 cask "firefox"
 cask "flutter"
+cask "font-dejavu"
 cask "font-inter"
 cask "font-jetbrains-mono"
 cask "forticlient"
@@ -216,7 +212,7 @@ cask "iterm2"
 cask "karabiner-elements"
 cask "keybase"
 cask "ledger-live"
-cask "logi-options-plus"
+cask "logi-options+"
 cask "logitech-g-hub"
 cask "lunar"
 cask "macs-fan-control"
@@ -226,6 +222,7 @@ cask "moonlight"
 cask "ngrok"
 cask "nordvpn"
 cask "notion"
+cask "notunes"
 cask "obsidian"
 cask "odrive"
 cask "openlens"
@@ -264,23 +261,23 @@ cask "transmit"
 cask "visual-studio-code"
 cask "webpquicklook"
 cask "whatsapp"
+cask "youtube-music"
 cask "zoom"
 mas "1Blocker", id: 1365531024
 mas "1Password for Safari", id: 1569813296
 mas "Actions", id: 1586435171
 mas "Affinity Designer", id: 824171161
 mas "Animatrice", id: 1133146803
+mas "Brother iPrint&Scan", id: 1193539993
 mas "DaisyDisk", id: 411643860
 mas "Dato", id: 1470584107
-mas "GarageBand", id: 682658836
+mas "Developer", id: 640199958
 mas "Gifski", id: 1351639930
-mas "Home Assistant", id: 1099568401
 mas "iMovie", id: 408981434
 mas "iStat Menus", id: 1319778037
 mas "Keynote", id: 409183694
 mas "Microsoft Excel", id: 462058435
 mas "Microsoft PowerPoint", id: 462062816
-mas "Microsoft Remote Desktop", id: 1295203466
 mas "Microsoft Word", id: 462054704
 mas "Numbers", id: 409203825
 mas "Omnivore", id: 1564031042
@@ -295,5 +292,5 @@ mas "Things", id: 904280696
 mas "Transporter", id: 1450874784
 mas "Trello", id: 1278508951
 mas "Twitter", id: 1482454543
-mas "WireGuard", id: 1451685025
+mas "Windows App", id: 1295203466
 mas "Xcode", id: 497799835
