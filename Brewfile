@@ -106,7 +106,6 @@ brew "kubeseal"
 brew "lazydocker"
 brew "libpsl"
 brew "libxml2"
-brew "mackup"
 brew "mailpit", restart_service: true
 brew "make"
 brew "mas"
