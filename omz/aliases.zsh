@@ -15,7 +15,10 @@ alias nah="git reset --hard HEAD && git clean -fd"
 # php
 alias ct="composer test"
 alias sail="bash vendor/bin/sail"
-alias fresh="php artisan migrate:fresh --seed"
+alias a="artisan"
+alias fresh="artisan migrate:fresh --seed"
+alias tinker="artisan tinker"
+alias serve="artisan serve"
 
 # Recursively delete `.DS_Store` files
 alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"

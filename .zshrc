@@ -7,6 +7,9 @@ export PATH=/usr/local/bin:~/.config/phpmon/bin:$PATH
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
+# Path to .zcompdump files.
+export ZSH_COMPDUMP="$HOME/.cache/zsh/.zcompdump-${SHORT_HOST}-${ZSH_VERSION}"
+
 # Enable completions
 autoload -Uz compinit && compinit
 
@@ -74,6 +77,7 @@ ZSH_CUSTOM=$DOTFILES/omz
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
     1password
+    artisan
     aliases
     aws
     brew
@@ -122,6 +126,7 @@ export RPROMPT='$(aws_prompt_info) $(tf_prompt_info)'
 
 # Preferred editor
 export EDITOR='vim'
+export ARTISAN_OPEN_ON_MAKE_EDITOR="code"
 
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 

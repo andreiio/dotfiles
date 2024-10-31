@@ -16,6 +16,7 @@ tap "shivammathur/extensions"
 tap "shivammathur/php"
 tap "snyk/tap"
 tap "th-ch/youtube-music"
+tap "typesense/tap"
 brew "act"
 brew "ca-certificates"
 brew "ansible"
@@ -54,7 +55,6 @@ brew "curl"
 brew "freetds"
 brew "gd"
 brew "gmp"
-brew "icu4c"
 brew "libpq"
 brew "php", restart_service: true, link: false
 brew "composer"
@@ -71,6 +71,7 @@ brew "tesseract"
 brew "ffmpeg"
 brew "flyctl"
 brew "fzf"
+brew "gawk"
 brew "gh"
 brew "gifsicle"
 brew "git"
@@ -175,6 +176,7 @@ brew "shivammathur/php/php", link: false
 brew "shivammathur/php/php@7.4"
 brew "shivammathur/php/php@8.2", link: true
 brew "snyk/tap/snyk"
+brew "typesense/tap/typesense-server@27.1"
 cask "1password"
 cask "1password-cli"
 cask "adobe-creative-cloud"
@@ -224,6 +226,7 @@ cask "notion"
 cask "notunes"
 cask "obsidian"
 cask "odrive"
+cask "openemu"
 cask "openlens"
 cask "pgadmin4"
 cask "plex"
@@ -290,6 +293,5 @@ mas "The Unarchiver", id: 425424353
 mas "Things", id: 904280696
 mas "Transporter", id: 1450874784
 mas "Trello", id: 1278508951
-mas "Twitter", id: 1482454543
 mas "Windows App", id: 1295203466
 mas "Xcode", id: 497799835
