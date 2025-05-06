@@ -63,6 +63,8 @@ COMPLETION_WAITING_DOTS="true"
 # see 'man strftime' for details.
 HIST_STAMPS="yyyy-mm-dd"
 
+setopt HIST_IGNORE_SPACE
+
 # You may need to manually set your language environment
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
@@ -118,6 +120,9 @@ export HOMEBREW_CASK_OPTS="--no-quarantine"
 export HOMEBREW_NO_ENV_HINTS=1
 export HOMEBREW_NO_ANALYTICS=1
 export HOMEBREW_NO_INSTALL_UPGRADE=1
+export HOMEBREW_SORBET_RUNTIME=false
+#export HOMEBREW_NO_SORBET_RUNTIME=1
+#export HOMEBREW_DEVELOPER=0
 
 export SHOW_AWS_PROMPT=true
 export ZSH_THEME_AWS_DIVIDER=" "

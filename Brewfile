@@ -31,7 +31,7 @@ brew "jpeg-xl"
 brew "aom"
 brew "argon2"
 brew "asciinema"
-brew "asimov", restart_service: true
+brew "asimov", restart_service: :changed
 brew "aspell"
 brew "atuin"
 brew "autoconf"
@@ -56,7 +56,6 @@ brew "freetds"
 brew "gd"
 brew "gmp"
 brew "libpq"
-brew "php", restart_service: true, link: false
 brew "composer"
 brew "csvlens"
 brew "dark-mode"
@@ -64,7 +63,7 @@ brew "deno"
 brew "harfbuzz"
 brew "openjdk"
 brew "dependency-check"
-brew "dnsmasq", restart_service: true
+brew "dnsmasq", restart_service: :changed
 brew "doctl"
 brew "exiftool"
 brew "tesseract"
@@ -87,7 +86,7 @@ brew "pinentry"
 brew "gnupg"
 brew "go"
 brew "graphviz"
-brew "pkg-config"
+brew "pkgconf"
 brew "guile"
 brew "helm"
 brew "highlight"
@@ -107,13 +106,13 @@ brew "kubeseal"
 brew "lazydocker"
 brew "libpsl"
 brew "libxml2"
-brew "mailpit", restart_service: true
+brew "mailpit", restart_service: :changed
 brew "make"
 brew "mas"
-brew "minio", restart_service: true
+brew "minio"
 brew "mmv"
-brew "mysql@8.4", restart_service: true, link: true
-brew "nginx"
+brew "mysql@8.4", restart_service: :changed, link: true
+brew "nginx", restart_service: :changed
 brew "nmap"
 brew "oha"
 brew "opentofu"
@@ -124,19 +123,20 @@ brew "parallel"
 brew "pgcli"
 brew "pinentry-mac"
 brew "pngquant"
-brew "postgresql@14", restart_service: true
+brew "postgresql@17", restart_service: :changed
 brew "pv"
 brew "python@3.9"
 brew "qemu"
 brew "qrencode"
 brew "qt"
 brew "rclone"
-brew "redis", restart_service: true
 brew "ripgrep"
 brew "rsync"
 brew "s3cmd"
+brew "sevenzip"
 brew "slowhttptest"
 brew "smartmontools"
+brew "spek"
 brew "tailspin"
 brew "telnet"
 brew "terrascan"
@@ -144,6 +144,8 @@ brew "tesseract-lang"
 brew "tfsec"
 brew "tldr"
 brew "tree"
+brew "trivy"
+brew "valkey", restart_service: :changed
 brew "vim"
 brew "wget"
 brew "yt-dlp"
@@ -155,28 +157,35 @@ brew "planetscale/tap/pscale"
 brew "shivammathur/extensions/igbinary@7.4"
 brew "shivammathur/extensions/igbinary@8.2"
 brew "shivammathur/extensions/igbinary@8.3"
+brew "shivammathur/extensions/igbinary@8.4"
 brew "shivammathur/extensions/imagick@7.4"
 brew "shivammathur/extensions/imagick@8.2"
 brew "shivammathur/extensions/imagick@8.3"
+brew "shivammathur/extensions/imagick@8.4"
 brew "shivammathur/extensions/msgpack@7.4"
 brew "shivammathur/extensions/msgpack@8.2"
 brew "shivammathur/extensions/msgpack@8.3"
+brew "shivammathur/extensions/msgpack@8.4"
 brew "shivammathur/extensions/pcov@7.4"
 brew "shivammathur/extensions/pcov@8.2"
 brew "shivammathur/extensions/pcov@8.3"
+brew "shivammathur/extensions/pcov@8.4"
 brew "shivammathur/extensions/redis@7.4"
 brew "shivammathur/extensions/redis@8.2"
 brew "shivammathur/extensions/redis@8.3"
+brew "shivammathur/extensions/redis@8.4"
 brew "shivammathur/extensions/swoole@8.2"
 brew "shivammathur/extensions/swoole@8.3"
+brew "shivammathur/extensions/swoole@8.4"
 brew "shivammathur/extensions/xdebug@7.4"
 brew "shivammathur/extensions/xdebug@8.2"
 brew "shivammathur/extensions/xdebug@8.3"
-brew "shivammathur/php/php", link: false
+brew "shivammathur/extensions/xdebug@8.4"
 brew "shivammathur/php/php@7.4"
 brew "shivammathur/php/php@8.2", link: true
+brew "shivammathur/php/php@8.3"
 brew "snyk/tap/snyk"
-brew "typesense/tap/typesense-server@27.1"
+brew "typesense/tap/typesense-server@28.0"
 cask "1password"
 cask "1password-cli"
 cask "adobe-creative-cloud"
@@ -189,24 +198,26 @@ cask "balenaetcher"
 cask "bartender"
 cask "betterzip"
 cask "browserosaurus"
+cask "calibre"
+cask "choosy"
 cask "chromedriver"
 cask "codeql"
 cask "dbeaver-community"
+cask "diffusionbee"
 cask "discord"
 cask "docker"
 cask "drawio"
 cask "dropshare"
 cask "figma"
 cask "firefox"
-cask "flutter"
 cask "font-dejavu"
 cask "font-inter"
 cask "font-jetbrains-mono"
 cask "forticlient"
 cask "google-chrome"
-cask "google-cloud-sdk"
 cask "google-drive"
 cask "handbrake"
+cask "huggingchat"
 cask "iina"
 cask "imageoptim"
 cask "iterm2"
@@ -228,7 +239,9 @@ cask "obsidian"
 cask "odrive"
 cask "openemu"
 cask "openlens"
+cask "orion"
 cask "pgadmin4"
+cask "phpmon"
 cask "plex"
 cask "poedit"
 cask "postman"
@@ -248,6 +261,7 @@ cask "rectangle"
 cask "session-manager-plugin"
 cask "signal"
 cask "slack"
+cask "spotify"
 cask "steam"
 cask "suspicious-package"
 cask "syntax-highlight"
@@ -255,6 +269,7 @@ cask "tableplus"
 cask "teamviewer"
 cask "telegram"
 cask "thingsmacsandboxhelper"
+cask "tidal"
 cask "timemachineeditor"
 cask "tinkerwell"
 cask "tint"
@@ -264,6 +279,7 @@ cask "visual-studio-code"
 cask "webpquicklook"
 cask "whatsapp"
 cask "youtube-music"
+cask "zen-browser"
 cask "zoom"
 mas "1Blocker", id: 1365531024
 mas "1Password for Safari", id: 1569813296
@@ -276,20 +292,20 @@ mas "Dato", id: 1470584107
 mas "Developer", id: 640199958
 mas "Gifski", id: 1351639930
 mas "iMovie", id: 408981434
+mas "Instapaper", id: 288545208
 mas "iStat Menus", id: 1319778037
 mas "Keynote", id: 409183694
 mas "Microsoft Excel", id: 462058435
 mas "Microsoft PowerPoint", id: 462062816
 mas "Microsoft Word", id: 462054704
 mas "Numbers", id: 409203825
-mas "Omnivore", id: 1564031042
 mas "Pages", id: 409201541
 mas "Parcel", id: 639968404
 mas "Patterns", id: 429449079
+mas "Perplexity", id: 6714467650
 mas "Prime Video", id: 545519333
 mas "Steam Link", id: 1246969117
 mas "Tailscale", id: 1475387142
-mas "The Unarchiver", id: 425424353
 mas "Things", id: 904280696
 mas "Transporter", id: 1450874784
 mas "Trello", id: 1278508951
